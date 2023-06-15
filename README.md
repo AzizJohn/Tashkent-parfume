@@ -53,5 +53,16 @@ The development server will start running, and you can access the Tashkent Parfu
    
    ![image](https://github.com/AzizJohn/Tashkent-parfume/assets/101688328/948b6009-e3e8-4903-93cb-49fb406a1597)
 
+# Usage  
+## Once the Tashkent Parfume Ecommerce application is up and running, follow these steps to utilize the application:  
+1. Open a web browser and navigate to the application URL (http://localhost:8000/swagger/ if running locally).
+2. Register for a new account or login if you already have one.
+3. Browse the available perfumes and select the ones you are interested in.
+4. Add selected perfumes to your cart.
+5. Proceed to the checkout page, where you can review your order and provide shipping and payment details.
+6. Complete the purchase by confirming the order.
+7. Track the status of your order in the order history section.
+8. Explore other features such as wishlist, product reviews, and user profile management.
+
 
 
