@@ -1,0 +1,110 @@
+Tashkent parfum
+
+Products:
+id
+name
+original_price
+discounted_price
+is_discounted
+image
+rating
+brand_name -> (foreign key to Brands)
+section_name -> (foreign key to Sections)
+created_at
+updated_at
+
+Sections:
+id
+name
+image
+created_at
+updated_at
+
+Brands:
+id
+name
+icon
+
+
+comments:
+id
+user_id -> (foreign key to Users)
+product_id -> (foreign key to Products)
+text
+rating
+created_at
+updated_at
+
+
+
+properties:
+id
+product_id -> (foreign key to Products)
+gender
+volume
+type
+created_at
+updated_at
+
+##  ---> Cart Order app <---
+
+Orders:
+id
+order_number
+user_id -> (foreign key to Users)
+cart_id -> (foreign key to Cart)
+first_name
+last_name
+phone_number
+additional_phone_number
+region_id -> (foreign key to Regions)
+district_id -> (foreign key to Districts)
+address
+payment_method
+status  -->  (pending, processing, delivered, cancelled)
+
+
+PaymentMethods:
+id
+name  -->  (click, payme, paynet, cash)
+
+
+Regions:
+id
+name
+
+
+Districts:
+id
+name
+region_id -> (foreign key to Regions)
+
+
+
+
+
+
+Cart:
+id
+user_id -> (foreign key to Users)
+final_price
+discounted_price
+shipping_price
+in_order ---> (boolean)
+quantity
+created_at
+updated_at
+
+
+Cart_items:
+id
+cart_id -> (foreign key to Cart)
+product_id -> (foreign key to Products)
+quantity
+final_price
+
+
+Cart_products:
+id
+cart_id -> (foreign key to Cart)
+cart_item_id -> (foreign key to Cart_items)
